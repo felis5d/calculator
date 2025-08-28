@@ -4,21 +4,24 @@
         <style>
             @font-face {
                 font-family: "Digital-7";
-                src: url(/digital-7/digital-7-mono.ttf) format("truetype");
+                src: url("digital-7/digital-7-mono.ttf");
             }
             body {
-                background-color: rgb(0, 0, 25);
+                background-color: #000019;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 height: 100vh;
                 margin: unset;
+                font-family: "Digital-7";
+                font-size: 40px;
+                line-height: 1em;
             }
             .calculator {
                 border-radius: 3px;
                 background-color: plum;
                 width: fit-content;
-                padding: 30px;
+                padding: 40px 20px 30px;
                 border-style: solid;
                 border-width: 20px;
                 border-top-color: #ebc7eb;
@@ -33,14 +36,14 @@
                 justify-content: space-between;
             }
             div {
-                font-size: 40px;
                 color: white;
             }
             .display {
+                font-size: 47px;
                 margin-bottom: 20px;
-                background-color: black;
-                color: lime;
-                padding: 20px;
+                background-color: #000019;
+                color: aqua;
+                padding: 10px 10px 20px 10px;
                 border-style: solid;
                 border-width: 20px;
                 border-top-color: mediumorchid;
@@ -49,8 +52,8 @@
                 border-left-color: #ebc7eb;
             }
             .btn {
-                font-family: "Digital-7";
-                padding: 0 10px;
+                padding: 0 10px 8px 10px;
+                cursor: pointer;
                 border-style: solid;
                 border-width: 10px;
                 border-top-color: #ebc7eb;
