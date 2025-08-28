@@ -2,8 +2,61 @@
 <html>
     <head>
         <style>
+            @font-face {
+                font-family: "Digital-7";
+                src: url(/digital-7/digital-7-mono.ttf) format("truetype");
+            }
+            body {
+                background-color: rgb(0, 0, 25);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: unset;
+            }
             .calculator {
-                background-color: darkblue;
+                border-radius: 3px;
+                background-color: plum;
+                width: fit-content;
+                padding: 30px;
+                border-style: solid;
+                border-width: 20px;
+                border-top-color: #ebc7eb;
+                border-right-color: #ebc7eb;
+                border-bottom-color: mediumorchid;
+                border-left-color: mediumorchid;
+            }
+            .row {
+                display: flex;
+                margin-bottom: 10px;
+                gap: 10px;
+                justify-content: space-between;
+            }
+            div {
+                font-size: 40px;
+                color: white;
+            }
+            .display {
+                margin-bottom: 20px;
+                background-color: black;
+                color: lime;
+                padding: 20px;
+                border-style: solid;
+                border-width: 20px;
+                border-top-color: mediumorchid;
+                border-right-color: mediumorchid;
+                border-bottom-color: #ebc7eb;
+                border-left-color: #ebc7eb;
+            }
+            .btn {
+                font-family: "Digital-7";
+                padding: 0 10px;
+                border-style: solid;
+                border-width: 10px;
+                border-top-color: #ebc7eb;
+                border-right-color: #ebc7eb;
+                border-bottom-color: mediumorchid;
+                border-left-color: mediumorchid;
             }
         </style>
         <script>
@@ -13,34 +66,32 @@
         </script>
     </head>
     <body>
-        <div class="page">
-            <div class="calculator">
-                <div class="inner">
-                    <div class="display">1+2=3</div>
-                    <div class="row">
-                        <div class="btn">1</div>
-                        <div class="btn">2</div>
-                        <div class="btn">3</div>
-                        <div class="btn">+</div>
-                    </div>
-                    <div class="row">
-                        <div class="btn">4</div>
-                        <div class="btn">5</div>
-                        <div class="btn">6</div>
-                        <div class="btn">-</div>
-                    </div>
-                    <div class="row">
-                        <div class="btn">7</div>
-                        <div class="btn">8</div>
-                        <div class="btn">9</div>
-                        <div class="btn">*</div>
-                    </div>
-                    <div class="row">
-                        <div class="btn">/</div>
-                        <div class="btn">C</div>
-                        <div class="btn">AC</div>
-                        <div class="btn" onclick="calculate()">=</div>
-                    </div>
+        <div class="calculator">
+            <div class="inner">
+                <div class="display">1+2=3</div>
+                <div class="row">
+                    <div class="btn">1</div>
+                    <div class="btn">2</div>
+                    <div class="btn">3</div>
+                    <div class="btn">+</div>
+                </div>
+                <div class="row">
+                    <div class="btn">4</div>
+                    <div class="btn">5</div>
+                    <div class="btn">6</div>
+                    <div class="btn">-</div>
+                </div>
+                <div class="row">
+                    <div class="btn">7</div>
+                    <div class="btn">8</div>
+                    <div class="btn">9</div>
+                    <div class="btn">*</div>
+                </div>
+                <div class="row">
+                    <div class="btn">/</div>
+                    <div class="btn">C</div>
+                    <div class="btn">AC</div>
+                    <div class="btn" onclick="calculate()">=</div>
                 </div>
             </div>
         </div>
